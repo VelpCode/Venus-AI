@@ -1,0 +1,64 @@
+.gradient-text {
+    background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline; /* Ensures that the gradient applies only to the text and not the entire line */
+  }
+
+  .fah {
+    color: #222222;
+  }
+
+  .boxsec {
+    display: grid;
+    grid-template-columns: repeat(3, 200px); /* Adjust based on your needs */
+    gap: 170px; /* Adjust the gap between boxes as needed */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Aligns items vertically, if needed */
+    margin: 0 auto; /* Centers the grid container itself if it has a specific width */
+  }
+
+  @media (max-width: 600px) {
+    .boxsec {
+      grid-template-columns: (1fr, 200px); /* 1 column layout */
+    }
+  }
+  
+  /* For medium-sized screens: adjust the grid to have 2 columns */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .boxsec {
+      grid-template-columns: repeat(2, 200px); /* 2 columns layout */
+    }
+  }
+  
+  /* For larger screens: maintain the 3 columns, but make them flexible */
+  @media (min-width: 901px) {
+    .boxsec {
+      grid-template-columns: repeat(3, 200px); /* 3 columns, but flexible */
+    }
+  }
+
+
+
+  .boxie {
+  background-color: #F1F1F1;
+  background-image: linear-gradient(147deg, #f4eefa 0%, #FFFFFF 74%);
+  border: 1px solid #FFFFEE;
+
+  }
+
+  .navbar {
+    border-bottom: 2px solid #F1F1F1;
+  }
+
+
+  .creations {
+
+    border: 1px solid none;
+    background-color: #8EC5FC;
+    width: 180px;
+    padding: 15px;
+    border-radius: 60px;
+  }
